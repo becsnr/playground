@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@keyframes piscar-vermelho { /* define as etapas da animação */
+  0%, 50%, 100% { background: red; box-shadow: 0 0 20px red; }
+  25%, 75% { background: #555; box-shadow: none; }
+
+}
+
 div#semaforo {
     background-color: black;
     width: 300px;
@@ -19,20 +25,20 @@ div#semaforo {
     margin: 10px;
 }
 
-#semaforo > #red:hover {
-    background-color: red;
-    transition: background 0.5s, box-shadow 0.3s; 
+#semaforo > #red {
+    animation: piscar-vermelho 2s infinite; /* aplica a animação na bolinha */
+    
+}
+
+#semaforo > #yellow:hover {
+    background-color: yellow;
+    transition: background 0.5s, box-shadow 0.3s;
     /* transition propriedade duração curva-de-velocidade atraso 
         propriedade → qual propriedade vai animar (background, width, transform, etc.)
         duração → quanto tempo vai durar a transição (0.3s, 1s, etc.)
         curva de velocidade (timing-function) → como a mudança acontece (linear, ease, ease-in, ease-out)
         atraso (delay) → quanto tempo esperar antes de começar (0s, 0.5s)
     */
-}
-
-#semaforo > #yellow:hover {
-    background-color: yellow;
-    transition: background 0.5s, box-shadow 0.3s;
 }
 
 #semaforo > #green:hover {
