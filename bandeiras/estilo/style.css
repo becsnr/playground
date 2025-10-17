@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div#brasil {
+    position: relative; /* colocando o position da pra mudar as posições das divs; sem ela o z-index ñ funcionou*/
+    display: flex;
+    flex-direction: column; /* coloca as filhas em colunas */
+    justify-content: center; /* centraliza vertical */
+    align-items: center; /* centraliza horizotal*/
+}
+
+div#brasil > div.br-verde {
+    position: relative;
+    background-color: #00953E;
+    width: 700px;
+    height: 500px;
+    z-index: 1; /* z-index serve pra controlar a ordem das camadas dos elementos na tela — tipo qual fica na frente e qual fica atrás. */
+    
+}
+
+div#brasil > div.br-amarelo {
+    position: absolute;
+    justify-content: center;
+    background-color: #FFCC00;
+    width: 320px;
+    height: 320px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+div#brasil > div.br-azul {
+    position: absolute;
+    background-color: #2C2182;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+div#brasil > div.br-branco {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 20px;
+    z-index: 4;
+    transform: rotate(15deg);
+    display: flex; /* permitir mexer o texto */
+    justify-content: center; /* centraliza o texto */
+    align-items: center; /* coloca o texto dentro da caixa */
+}
+
+div#brasil > div.br-branco > p {
+    text-transform: uppercase;
+    color: #80CDA3;
+}
