@@ -19,14 +19,23 @@ div#semaforo {
     margin: 10px;
 }
 
-#semaforo > #red {
+#semaforo > #red:hover {
     background-color: red;
+    transition: background 0.5s, box-shadow 0.3s; 
+    /* transition propriedade duração curva-de-velocidade atraso 
+        propriedade → qual propriedade vai animar (background, width, transform, etc.)
+        duração → quanto tempo vai durar a transição (0.3s, 1s, etc.)
+        curva de velocidade (timing-function) → como a mudança acontece (linear, ease, ease-in, ease-out)
+        atraso (delay) → quanto tempo esperar antes de começar (0s, 0.5s)
+    */
 }
 
-#semaforo > #yellow {
+#semaforo > #yellow:hover {
     background-color: yellow;
+    transition: background 0.5s, box-shadow 0.3s;
 }
 
-#semaforo > #green {
+#semaforo > #green:hover {
     background-color: rgb(8, 190, 8);
+    transition: background 0.5s, box-shadow 0.3s;
 }
