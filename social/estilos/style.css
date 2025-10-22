@@ -16,11 +16,20 @@ body {
 
 main {
     position: relative;
+    height: 100vh;
 }
 
 #telefone {
-    width: 100px;
-    height: 100px;
-    background: #E8DAFF;
-    background: url('');
+    width: 300px;
+    height: 500px;
+    background: #E8DAFF url('../imagens/frame-iphone.png') no-repeat center center /contain;
+    border: 2px solid red;
+}
+
+#tela {
+    position: absolute;
+    top: 65px;
+    left: 44px;
+    width: 211px;
+    height: 375px;
 }
