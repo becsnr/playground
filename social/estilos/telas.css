@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -12,4 +13,17 @@
 
 img {
     width: 100vw;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: purple;
+    padding: 20px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #8E7BE6;
 }
