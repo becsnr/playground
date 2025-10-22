@@ -33,12 +33,13 @@ main {
     height: 500px;
     background: #E8DAFF url('../imagens/frame-iphone.png') no-repeat center center /contain;
     border-radius: 20px;
+    margin: 20px;
 }
 
 #tela {
     position: absolute;
-    top: 65px;
-    left: 44px;
+    top: 83px;
+    left: 63px;
     width: 211px;
     height: 375px;
 }
