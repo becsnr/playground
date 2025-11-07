@@ -11,9 +11,11 @@
 </head>
 <body>
     <header>
-        <div id="logo">
+        <a href="#principal">
+            <div id="logo">
             
-        </div>
+            </div>
+        </a>
         <div id="search">
             <div>
                 <span id="lupa" class="material-symbols-outlined">search</span>
@@ -25,63 +27,115 @@
         </div>
 
         <div id="login">
-            <div>
-                <p>Cadastrar-se</p>
-            </div>
-            <div>
-                <p>Entrar</p>
-            </div>
+            <a href="login.html">Entrar</a>
         </div>
     </header>
 
     <div id="container">
-        <nav>
-            <h1>Sua biblioteca</h1>
-            <div>
-                <h2>Crie sua primeira playlist</h2>
-                <p>É fácil vamos te ajudar!</p>
-                <button>Criar playlists</button>
-            </div>
-            <div>
-                <h2>Que tal seguir um podcast novo?</h2>
-                <p>Alertaremos você sobre novos episódios.</p>
-                <button>Explorar podcasts</button>
+        <nav id="anuncio">
+            <!-- <span id="menu-icon" onclick="clickMenu()" class="material-symbols-outlined">playlist_add</span> -->
+            <div id="biblioteca">
+                <h1>Sua biblioteca</h1>
+                <div>
+                    <h2>Crie sua primeira playlist</h2>
+                    <p>É fácil vamos te ajudar!</p>
+                    <button>Criar playlists</button>
+                </div>
+                <div>
+                    <h2>Que tal seguir um podcast novo?</h2>
+                    <p>Alertaremos você sobre novos episódios.</p>
+                    <button>Explorar podcasts</button>
+                </div>
             </div>
         </nav>
         <main>
             <section id="principal">
                 <h1>Artistas populares</h1>
                 <div id="pop">
-                    <div>
-                        <img src="imagens/bts.jpg" alt="BTS">
-                        <p>BTS</p>
-                    </div>
-                    <div>
-                        <img src="imagens/w2e.jpg" alt="Wave to Earth">
-                        <p>Wave to Earth</p>
-                    </div>
-                    <div>
-                        <img src="imagens/2metro.jpg" alt="2metro">
-                        <p>2metro</p>
-                    </div>
-                    <div>
-                        <img src="imagens/nesk-only.jpg" alt="Nesk Only">
-                        <p>Nesk Only</p>
-                    </div>
-                    <div>
-                        <img src="imagens/njz.jpg" alt="">
-                        <p>New Jeans</p>
-                    </div>
+                    <a href="artistas/bts.html">
+                        <div>
+                            <img src="imagens/bts.jpg" alt="BTS">
+                            <h1>BTS</h1>
+                            <p>Artista</p>
+                        </div>
+                    </a>
+                    <a href="artistas/w2e.html">
+                        <div>
+                            <img src="imagens/w2e.jpg" alt="Wave to Earth">
+                            <h1>Wave to Earth</h1>
+                            <p>Artista</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="imagens/2metro.jpg" alt="2metro">
+                            <h1>2metro</h1>
+                            <p>Artista</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="imagens/nesk-only.jpg" alt="Nesk Only">
+                            <h1>Nesk Only</h1>
+                            <p>Artista</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="imagens/njz.jpg" alt="">
+                            <h1>New Jeans</h1>
+                            <p>Artista</p>
+                        </div>
+                    </a>
                 </div>
+
+                <h1>Singles e Álbuns que todo mundo gosta</h1>
                 <div id="albuns">
-                    <h1>Singles e Álbuns que todo mundo gosta</h1>
-                    <div>jk golden</div>
-                    <div>leehi Only</div>
-                    <div>cristo 2metro</div>
-                    <div>meia noite fhope</div>
+                    <a href="">
+                        <div>
+                            <img src="imagens/album-capa/2metro-capa.jpg" alt="Cristo e mais nada - 2metro">
+                            <p>2metro</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="imagens/album-capa/bts-capa.jpg" alt="The Most Beautiful Moment in Life: Young Forever - BTS">
+                            <p>BTS</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="imagens/album-capa/jk-capa.jpg" alt="Golden - Jungkook">
+                            <p>Jungkook</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="imagens/album-capa/w2e-capa.jpg" alt="summer flows 0.02 - Wave to Earth">
+                            <p>Wave to Earth</p>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>
     </div>
+
+    <script>
+        function big() {
+            if (window.innerWidth >= 768) {
+                biblioteca.style.display = 'block';
+            } else {
+                biblioteca.style.display = 'none';
+            }
+        }
+
+        function clickMenu() {
+            if (biblioteca.style.display == 'block') {
+                biblioteca.style.display = 'none';
+            } else {
+                biblioteca.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
