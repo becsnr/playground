@@ -94,3 +94,46 @@ main div#follow button {
     width: 100px;
     cursor: pointer;
 }
+
+.pop {
+    padding-left: 20px;
+}
+
+#mscs-populares {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.mscs-nomes {
+    display: grid;
+    grid-template-columns: 40px 60px 120px 150px 60px;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mscs-nomes:hover {
+    background-color: rgba(168, 168, 168, 0.445);
+}
+
+.nome {
+    width: 100px;
+}
+
+/* CAPAS DAS MUSICAS */
+div.msc-foto img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.nome {
+    margin-right: 300px;
+}
+
+.num {
+    color: rgb(168, 168, 168);
+    font-weight: bolder;
+}
+
